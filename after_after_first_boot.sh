@@ -3,8 +3,8 @@
 # headers for building modules n shit
 apt install -y linux-headers-$(uname -r)
 
-# all the NVIDIA, CUDA, OpenCL
-apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit clinfo
+# all the NVIDIA, CUDA
+apt install -y nvidia-driver nvidia-cuda-*
 
 # CUDA availability
 echo -e "\n# CUDA\nPATH=$PATH:/usr/lib/nvidia-cuda-toolkit/bin\nLD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia-cuda-toolkit/lib:/lib\nexport PATH\nexport LD_LIBRARY_PATH" >> .~/bashrc
